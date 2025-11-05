@@ -112,12 +112,29 @@ def get_directions(origin:str, destination:str):
     
     return results
 
+def get_hotels(address:str):
+    """
+    get hotels nearby the address
+
+    Args:
+        address (str): address
+    """
+    closest_hotel = "Super 8 by Wyndham Plano/Dallas Area"
+
+    return {"closest_hotel":closest_hotel}
+    #Super 8 by Wyndham Plano/Dallas Area
+
 
 
 # %%
 # if __name__ == "__main__":
 #     get_directions("2726 phillips dr dallas", "dfw airport")
 
-#add modes of transport
+#add modes of transport(done)
 #add cost of transport
 #search the web for popular modes of transport
+
+
+#priority is to add a sync agent or orchestrator agent. 
+#%%
+

@@ -8,6 +8,10 @@ transport_agent = Agent(
     model="gemini-2.5-flash",
     name="transport_agent",
     description="give the directions information between two locations",
-    instruction="you are a helpful assistant that can give the directions information between two locations",
+    instruction="""you are a helpful assistant that can give the directions information between two locations
+    give the directions for all available travel modes
+    give the distance
+    give the duration
+    """,
     tools=[get_directions]
 )
